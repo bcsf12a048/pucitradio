@@ -1,0 +1,132 @@
+﻿@model d1.Models.User
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Radio</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="~/Content/radio.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top col-lg-12 col-md-12 col-sm-12 col-xs-12" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+                <a class="navbar-brand" style="font-size:x-large">Pucit Radio</a>
+            </div>
+            <p class="navbar-text navbar-right" style="margin-right:5px"><span class="glyphicon glyphicon-earphone Red-circle"></span><span>222110000</span></p>
+
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="/Home/Index">Home </a> </li>
+                    <li><a href="/Home/Login">Login</a> </li>
+                    <li><a href="/Home/schedule">schedule </a> </li>
+                    <li><a href="/Home/Index">About Us </a> </li>
+                    <li><a href="/Home/Index">LogOut </a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- S -->
+
+
+
+
+    <div class="item item1 col-lg-12 col-md-12 col-sm-12 col-xs-6">
+        <img style="width:1360px;height:500px" src="~/imgs/background.jpg">
+        <div class="Strm" style="top:80px;bottom:10px">
+            <h2>Sign In</h2>
+            @using (Html.BeginForm("CheckLoged", "Home", FormMethod.Post))
+            {
+                <form role="form">
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group ">
+                                @Html.LabelFor(Model => Model.Name)
+                                @Html.TextBoxFor(Medel => Model.Name)
+                            </div>
+                            <div class="form-group">
+
+                                <br>
+                                @Html.LabelFor(Model => Model.Password)
+                                @Html.TextBoxFor(Model => Model.Password)
+                                <a href="/Home/Forgot_password" title="Forgot password?" style="margin-left:80px; color:black">Forgot password?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="checkbox">
+                        <label><input type="checkbox">Remember Me</label>
+
+                    </div>
+                    <a href="@Url.Action("Customer_Loged_In","Home")" class="btn btn-default ">Login</a>
+                    <br>
+                    <a href="/Home/Sign_Up" title="Sign Up" style="margin-left:300px; color:black">Sign Up</a>
+                </form>
+
+            }
+
+
+
+        </div>
+    </div>
+    <!--social link-->
+
+    <div class="footer">
+
+        <p>&nbsp;</p>
+
+
+        <div class="row other-links center-block">
+            <div class="col-sm-3 col-xs-6">
+                <b><span class="glyphicon glyphicon-phone grey-circle" aria-hidden="true"></span>Contact us</b><br>
+                <p>
+                    T: <span class="">000 1111 22</span>
+                    E:<small> <a href="#">xxzzyy@abc.com</a></small><br>
+                </p>
+
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <b><span class="glyphicon glyphicon-map-marker grey-circle" aria-hidden="true"></span>Find us</b><br>
+                <p>
+                    lahore lahore<br>
+                    WeWork<br>
+                    1 lahore Street<br>
+                    pakistan pakistan<br>
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+        <p>
+        </p><div id="copyrights">
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
+
+
+
+
+
+    </div>
+
+
+    <div class="skype_c2c_menu_container notranslate" id="skype_c2c_menu_container" onmouseover="SkypeClick2Call.MenuInjectionHandler.showMenu(this, event)" onmouseout="SkypeClick2Call.MenuInjectionHandler.hideMenu(this, event)" data-fp="{A177C013-E5BD-417B-8F65-23CB921B3F55}" data-murl="https://pipe.skype.com/Client/2.0/" data-p2murl="https://c2c-p2m-secure.skype.com/p2m/v1/push" data-uiid="1" data-uilang="en" style="display: none;"><div class="skype_c2c_menu_click2call"><a class="skype_c2c_menu_click2call_action" id="skype_c2c_menu_click2call_action" target="_self">Call</a></div><div class="skype_c2c_menu_click2sms"><a class="skype_c2c_menu_click2sms_action" id="skype_c2c_menu_click2sms_action" target="_self">Send SMS</a></div><div class="skype_c2c_menu_push_to_mobile"><a class="skype_c2c_menu_push_to_mobile_action" id="skype_c2c_menu_push_to_mobile_action" target="_blank">Call from mobile</a></div><div class="skype_c2c_menu_add2skype"><a class="skype_c2c_menu_add2skype_text" id="skype_c2c_menu_add2skype_text" target="_self">Add to Skype</a></div><div class="skype_c2c_menu_toll_info"><span class="skype_c2c_menu_toll_callcredit">You'll need Skype Credit</span><span class="skype_c2c_menu_toll_free">Free via Skype</span></div></div><iframe src="./home fdx_files/saved_resource.html" id="__lo_storage" style="display: none;"></iframe><div id="_lo_fl_saver_div" style="position: absolute; overflow: hidden; z-index: 0; left: -100px; bottom: 1px;"><object style="position:absolute; left:-999px; width:1px; height:1px" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="" width="1" height="1" id="_lo_fl_saver"><param name="movie" value="https://cs.luckyorange.net/s.swf"><param name="allowScriptAccess" value="always"><param name="wmode" value="transparent"><embed style="width:1px; height:1px" swliveconnect="true" wmode="transparent" src="https://cs.luckyorange.net/s.swf" width="1" height="1" name="_lo_fl_saver" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="https:://www.macromedia.com/go/getflashplayer"></object></div><div onclick="LO.away_form()" id="lo_avail_for_chat_btn" style="cursor: pointer; padding:10px; height:auto; position:fixed;bottom:0px; right:20px;  z-index:999997; max-width: 250px; background-color: #000000; color: #ffffff; direction: ltr; font-weight:bold; font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;;  -box-shadow: 0px 0px 5px #000; box-shadow: 0px 0px 5px #000; -webkit-box-shadow: 0px 0px 5px #000; border:2px solid #fff;  border-bottom:none; -webkit-border-top-left-radius: 10px; -webkit-border-top-right-radius: 10px; -moz-border-radius-topleft: 10px; -moz-border-radius-topright: 10px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom:none; ">&nbsp; <img id="lo_mail_icon" width="21" height="12" style="width:21px; height:12px; padding-top:1px; border:none; margin:0; margin-left:3px;" src="./home fdx_files/mail.png" align="right" alt="">Do you have a question? Call us on <span class="skype_c2c_print_container notranslate">+92 336 666 9474 </span><span id="skype_c2c_container" class="skype_c2c_container notranslate" dir="ltr" tabindex="-1" onmouseover="SkypeClick2Call.MenuInjectionHandler.showMenu(this, event)" onmouseout="SkypeClick2Call.MenuInjectionHandler.hideMenu(this, event)" onclick="SkypeClick2Call.MenuInjectionHandler.makeCall(this, event)" data-numbertocall="+92366669474" data-numbertype="paid" data-isfreecall="false" data-isrtl="false" data-ismobile="false"><span class="skype_c2c_highlighting_inactive_common" dir="ltr" skypeaction="skype_dropdown"><span class="skype_c2c_textarea_span" id="non_free_num_ui"><img width="0" height="0" class="skype_c2c_logo_img" src="#"><span class="skype_c2c_text_span">03366669474</span><span class="skype_c2c_free_text_span"></span></span></span></span> or send us an email!</div>
+</body>
+</html>
